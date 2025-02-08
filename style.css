@@ -1,0 +1,60 @@
+*{
+  font-family: Helvetica, sans-serif;
+}
+
+#container{
+  width: 500px;
+  margin: 0 auto;
+}
+
+#to-do-list{
+  display: flex;
+  gap: 0.5rem;
+}
+
+#to-do-list input{
+  flex: 1;
+  height: 2rem;
+  border: 1px solid black;
+  padding: 0 0.5rem;
+}
+
+#to-do-list input:hover{
+  background-color: whitesmoke
+}
+
+#to-do-list input:focus{
+  background-color: white;
+  border: 1px solid black;
+  outline: none;
+  box-shadow: 0px 0px 5px rgb(199, 199, 199);
+}
+
+#to-do-list button{
+  width: 3rem;
+  border: none;
+  background-color: #f4B200;
+}
+
+#to-do-list button:hover{
+  background-color: rgb(255, 102, 0);
+}
+
+#list{
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin-top: 10px 0 0;
+}
+
+#list label{
+  background-color: white;
+  border: 1px solid #80808050;
+  padding: 0.5rem 1rem;
+}
+
+#list label:nth-child(odd){
+  background-color: #80808050;
+  border: 1px solid transparent;
+}
