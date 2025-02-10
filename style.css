@@ -7,54 +7,50 @@
   margin: 0 auto;
 }
 
-#to-do-list{
+#form-add-todo{
   display: flex;
   gap: 0.5rem;
 }
 
-#to-do-list input{
+#form-add-todo input{
   flex: 1;
-  height: 2rem;
   border: 1px solid black;
+  height: 2rem;
   padding: 0 0.5rem;
 }
 
-#to-do-list input:hover{
+#form-add-todo input:hover{
   background-color: whitesmoke
 }
 
-#to-do-list input:focus{
+#form-add-todo input:focus{
   background-color: white;
   border: 1px solid black;
   outline: none;
   box-shadow: 0px 0px 5px rgb(199, 199, 199);
 }
 
-#to-do-list button{
-  width: 3rem;
-  border: none;
+#form-add-todo button{
   background-color: #f4B200;
+  border: none;
+  width: 3rem;
 }
 
-#to-do-list button:hover{
+#form-add-todo button:hover{
   background-color: rgb(255, 102, 0);
 }
 
-#list{
-  display: flex;
-  flex-direction: column;
+#todo-list{
   list-style: none;
+  word-wrap: break-word;
   padding: 0;
-  margin-top: 10px 0 0;
+  border: 1px solid #ebebec;
 }
 
-#list label{
-  background-color: white;
-  border: 1px solid #80808050;
+#todo-list li{
   padding: 0.5rem 1rem;
 }
 
-#list label:nth-child(odd){
+#todo-list li:nth-child(odd){
   background-color: #80808050;
-  border: 1px solid transparent;
 }

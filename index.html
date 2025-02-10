@@ -2,23 +2,40 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <title>To Do List</title>
 </head>
 <body>
 
   <div id="container">
-    <form id="to-do-list">
-      <input type="text" name="atividade" id="atividade" placeholder="Digite uma tarefa">
-      <button type="submit">+</button>
+    <form id="form-add-todo">
+      <input type="text" id="task" placeholder="Digite uma tarefa">
+      <button>+</button>
     </form>
-    <ul id="list">
-      <label for="check1"><li><input type="checkbox" name="check1" id="check1">Task 1</li></label>
-      <label for="check2"><li><input type="checkbox" name="check2" id="check2">Task 2</li></label>
-      <label for="check3"><li><input type="checkbox" name="check3" id="check3">Task 3</li></label>
+    <ul id="todo-list">
+      <li>
+        <label>
+          <input type="checkbox" onclick="concluirTarefa(this)">
+          <span>Task 1</span>
+        </label>
+      </li>
+      <li>
+        <label>
+          <input type="checkbox" onclick="concluirTarefa(this)">
+          <span>Task 2</span>
+        </label>
+      </li>
+      <li>
+        <label>
+          <input type="checkbox" onclick="concluirTarefa(this)">
+          <span>Task 3</span>
+        </label>
+      </li>
     </ul>
   </div>
 
-  <script type="module" src="./javascript.js"></script>
+  <script src="script.js"></script>
+
 </body>
 </html>
